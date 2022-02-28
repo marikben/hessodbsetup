@@ -16,7 +16,9 @@ collectionList = [["Tags", "_idQuestionMotif", "textQuestion", "_idTags", "texte
 def insertCollections():
     for i in range (len(collectionList)):
         print(collectionList[i][0])
+        #collectionname = collectionList[i][0]
+        #newcollection = dbname[collectionname]
 
 if __name__ == "__main__": 
-    dbname = get_database()   
+    dbname = get_database() 
     insertCollections()
