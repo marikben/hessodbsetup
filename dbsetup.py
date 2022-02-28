@@ -1,3 +1,5 @@
+from dbconnection import get_database
+
 collectionList = [["Tags", "_idQuestionMotif", "textQuestion", "_idTags", "texteReponse"],
 ["QuestionParaVitaux", "_idQuestionParaVitaux", "textQuestion", "_idTags", "texteReponse"],
 ["QuestionAnamnese", "_idQuestionAnamnese", "textQuestion", "_idTags", "texteReponse"],
@@ -15,5 +17,6 @@ def insertCollections():
     for i in range (len(collectionList)):
         print(collectionList[i][0])
 
-if __name__ == "__main__":    
+if __name__ == "__main__": 
+    dbname = get_database()   
     insertCollections()
