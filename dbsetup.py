@@ -11,10 +11,9 @@ collectionList = [["Tags", "_idQuestionMotif", "textQuestion", "_idTags", "texte
  "tad", "spo2", "peakflowMin", "peakflowCM", "glycemie", "frequenceRespiratoire",
   "cetonemie", "douleur"], ["Pupilles", "_idPupilles", "pupilleReact", "pupilleSecondaire"]]
 
-def insertCollections(){
-    #tähän testaat että saatko ekan arvon eli nimen tulostettua
-}
+def insertCollections():
+    for i in range (len(collectionList)):
+        print(collectionList[i][0])
+
 if __name__ == "__main__":    
-
-
-   print(len(collectionList))
+    insertCollections()
