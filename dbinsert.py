@@ -1,7 +1,10 @@
 from dbconnection import get_database
+from dbsetup import collectionList
 
 dbname = get_database()
 collection_name = dbname["user_1_items"]
+
+#here some kind of a case-"tree" with options from the imported collectionList
 
 def addMany():
     item_1 = {
@@ -23,7 +26,7 @@ def addMany():
     }
 
     collection_name.insert_many([item_1,item_2])
-    
+
 def addOne():
     from dateutil import parser
     expiry_date = '2021-07-13T00:00:00.000Z'
