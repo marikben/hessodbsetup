@@ -1,5 +1,5 @@
-from dbconnection import get_database
-from dbinsert import addMany
+#from dbconnection import get_database
+#from dbinsert import addMany
 
 collectionList = [["Tags", "_idQuestionMotif", "textQuestion", "_idTags", "texteReponse"],
 ["QuestionParaVitaux", "_idQuestionParaVitaux", "textQuestion", "_idTags", "texteReponse"],
@@ -20,7 +20,7 @@ def insertCollections():
         #collectionname = collectionList[i][0]
         #newcollection = dbname[collectionname]
 
-if __name__ == "__main__": 
-    dbname = get_database() 
-    addMany()
-    insertCollections()
+#if __name__ == "__main__": 
+#dbname = get_database() 
+#addMany()
+insertCollections()

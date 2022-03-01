@@ -1,8 +1,8 @@
-from dbconnection import get_database
-from dbsetup import collectionList
+#from dbconnection import get_database
+#from dbsetup import collectionList
 
-dbname = get_database()
-collection_name = dbname["user_1_items"]
+#dbname = get_database()
+#collection_name = dbname["user_1_items"]
 
 #here some kind of a case-"tree" with options from the imported collectionList
 
@@ -25,7 +25,7 @@ def addMany():
     "item_description" : "brown country eggs"
     }
 
-    collection_name.insert_many([item_1,item_2])
+  #  collection_name.insert_many([item_1,item_2])
 
 def addOne():
     from dateutil import parser
@@ -38,4 +38,4 @@ def addOne():
     "expiry_date" : expiry
     }
 
-    collection_name.insert_one(item_3)
+   # collection_name.insert_one(item_3)
